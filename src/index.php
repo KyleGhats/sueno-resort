@@ -12,7 +12,7 @@ include_once("./connect/session_check.php");
 <main class="">
 	<div class="h-screen *:max-sm:py-10 max-sm:overflow-x-scroll grid grid-cols-1 lg:grid-cols-8 xl:grid-cols-6 items-center">
 		<div class="flex items-center 2xl:px-16 xl:px-14 lg:px-8 px-12 lg:col-span-3 xl:col-span-2 max-md:text-center h-full w-full bg-[#204A51]">
-			<div class="bg-clip-text bg-no-repeat text-transparent bg-[url('../img/water.webp')]">
+			<div class="bg-text-clip bg-no-repeat text-transparent bg-[url('../img/water.webp')]">
 				<h1 class="uppercase leading-tight text-[min(8vw,46px)] font-extrabold mb-10 ">The Calm of the ocean & the comfort of home.</h1>
 				<p class="text-lg tracking-[0.25rem] font-medium">Opening this summer of 2024</p>
 			</div>

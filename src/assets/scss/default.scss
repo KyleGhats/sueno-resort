@@ -4,4 +4,10 @@
 
 body {
 	font-family: 'Jost', sans-serif;
- }
+}
+@layer components {
+	.bg-text-clip {
+		-webkit-background-clip: text;
+		background-clip: text;
+	}
+}

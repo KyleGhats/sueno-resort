@@ -419,6 +419,10 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.bg-text-clip {
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 .visible{
   visibility: visible;
 }
@@ -574,6 +578,9 @@ video {
 .scroll-smooth{
   scroll-behavior: smooth;
 }
+.text-clip{
+  text-overflow: clip;
+}
 .rounded-full{
   border-radius: 9999px;
 }
@@ -599,12 +606,6 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-\[url\(\'\.\/assets\/img\/water\.webp\'\)\]{
-  background-image: url('./assets/img/water.webp');
-}
-.bg-\[url\(\'\.\.\/assets\/img\/water\.webp\'\)\]{
-  background-image: url('../assets/img/water.webp');
 }
 .bg-\[url\(\'\.\.\/img\/water\.webp\'\)\]{
   background-image: url('../img/water.webp');
@@ -670,37 +671,28 @@ video {
   font-size: 3.75rem;
   line-height: 1;
 }
-.text-\[min\(7vw\2c 45px\)\]{
-  font-size: min(7vw,45px);
+.text-\[min\(8vw\2c 46px\)\]{
+  font-size: min(8vw,46px);
 }
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
-.text-\[min\(7\.5vw\2c 45px\)\]{
-  font-size: min(7.5vw,45px);
-}
-.text-\[min\(8vw\2c 45px\)\]{
-  font-size: min(8vw,45px);
-}
-.text-\[min\(8vw\2c 46px\)\]{
-  font-size: min(8vw,46px);
-}
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.font-black{
+  font-weight: 900;
+}
 .font-bold{
   font-weight: 700;
-}
-.font-medium{
-  font-weight: 500;
 }
 .font-extrabold{
   font-weight: 800;
 }
-.font-black{
-  font-weight: 900;
+.font-medium{
+  font-weight: 500;
 }
 .uppercase{
   text-transform: uppercase;
@@ -714,6 +706,9 @@ video {
 .leading-7{
   line-height: 1.75rem;
 }
+.leading-none{
+  line-height: 1;
+}
 .leading-normal{
   line-height: 1.5;
 }
@@ -722,9 +717,6 @@ video {
 }
 .leading-tight{
   line-height: 1.25;
-}
-.leading-none{
-  line-height: 1;
 }
 .tracking-\[0\.25rem\]{
   letter-spacing: 0.25rem;
@@ -738,6 +730,10 @@ video {
 .tracking-widest{
   letter-spacing: 0.1em;
 }
+.text-\[\#204A51\]{
+  --tw-text-opacity: 1;
+  color: rgb(32 74 81 / var(--tw-text-opacity));
+}
 .text-red-500{
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
@@ -748,10 +744,6 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-\[\#204A51\]{
-  --tw-text-opacity: 1;
-  color: rgb(32 74 81 / var(--tw-text-opacity));
 }
 .underline{
   text-decoration-line: underline;
@@ -777,20 +769,8 @@ body {
   background-color: rgb(6 78 59 / var(--tw-bg-opacity));
 }
 
-.\*\:bg-\[url\(\'\.\.\/img\/water\.webp\'\)\] > *{
-  background-image: url('../img/water.webp');
-}
-
-.\*\:bg-clip-text > *{
-  background-clip: text;
-}
-
 .\*\:p-2 > *{
   padding: 0.5rem;
-}
-
-.\*\:text-transparent > *{
-  color: transparent;
 }
 
 .\*\:text-white > *{
@@ -805,17 +785,7 @@ body {
 }
 
 @media not all and (min-width: 640px){
-  .max-sm\:h-full{
-    height: 100%;
-  }
   .max-sm\:overflow-x-scroll{
-    overflow-x: scroll;
-  }
-  .max-sm\:py-10{
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-  }
-  .\*\:max-sm\:overflow-x-scroll > *{
     overflow-x: scroll;
   }
   .\*\:max-sm\:py-10 > *{
@@ -839,10 +809,6 @@ body {
   }
   .lg\:grid-cols-8{
     grid-template-columns: repeat(8, minmax(0, 1fr));
-  }
-  .lg\:px-10{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
   .lg\:px-8{
     padding-left: 2rem;
