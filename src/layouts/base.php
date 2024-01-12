@@ -9,11 +9,10 @@
 
 	<title> <?php echo $site_name;?> </title>
 	<?php include './layouts/styles.php'; ?>
-	<link rel="shortcut icon" href="./assets/img/logos/favicon.ico">
+	<link rel="shortcut icon" href="./assets/img/logo/favicon.ico">
 </head>
 
 <?php if ($in_concat == true) { ?>
-
 	<body class=" scroll-smooth">
 		<div class="">
 			<?php echo $content; ?>
@@ -27,5 +26,4 @@
 			</div>
 		<?php } ?>
 		</body>
-
 </html>
