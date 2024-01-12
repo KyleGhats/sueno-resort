@@ -8,7 +8,10 @@ function type() {
   currentWord = words[i];
 
   if (j <= currentWord.length) {
-    document.getElementById("typewriter").textContent = currentWord.substring(0, j);
+    document.getElementById("typewriter").textContent = currentWord.substring(
+      0,
+      j
+    );
     j++;
   } else {
     return; // Stop the function when all words are typed

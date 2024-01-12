@@ -1,5 +1,5 @@
 <?php
-$site_name = "Sueno";
+$site_name = "Sueno Villas";
 
 $localhost_status = false;
 $localhost_status_index = false;
