@@ -1,0 +1,1 @@
+{"version":3,"sources":["components/landing.scss"],"names":[],"mappings":"AACC,MAAA,QAAA,KAAA,eAAA","file":"landing.min.css","sourcesContent":[".test {\r\n\t@apply flex flex-col;\r\n}"]}
